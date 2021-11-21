@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e81b5622f34e46fdbaf63179342ce2d6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e81b5622f34e46fdbaf63179342ce2d6" ></div>
+        
+</body>
+<script>    
+    
+            var map_e81b5622f34e46fdbaf63179342ce2d6 = L.map(
+                "map_e81b5622f34e46fdbaf63179342ce2d6",
+                {
+                    center: [9.082, 8.6753],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d13acaf100f94e4a9c236bbffbba668a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 10, "maxZoom": 10, "minZoom": 2, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e81b5622f34e46fdbaf63179342ce2d6);
+        
+    
+            var marker_7ccb94a6f0f74350911eb43681bd22b3 = L.marker(
+                [6.60779, 3.36948],
+                {}
+            ).addTo(map_e81b5622f34e46fdbaf63179342ce2d6);
+        
+    
+            var icon_7c20353aafb14a429b6ed0c8b05e8616 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7ccb94a6f0f74350911eb43681bd22b3.setIcon(icon_7c20353aafb14a429b6ed0c8b05e8616);
+        
+    
+        var popup_586f0f3bacce48dbb1b5ca3952c313df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e9c2b0ff958b4b7b9d0e12c59be9889d = $(`<div id="html_e9c2b0ff958b4b7b9d0e12c59be9889d" style="width: 100.0%; height: 100.0%;">Continent: Africa<br>Country: Nigeria<br>Total: 22<br>State: Lagos</div>`)[0];
+            popup_586f0f3bacce48dbb1b5ca3952c313df.setContent(html_e9c2b0ff958b4b7b9d0e12c59be9889d);
+        
+
+        marker_7ccb94a6f0f74350911eb43681bd22b3.bindPopup(popup_586f0f3bacce48dbb1b5ca3952c313df)
+        ;
+
+        
+    
+    
+            var marker_08cccbf859094efdb230dd3e683d8572 = L.marker(
+                [6.60779, 3.36948],
+                {}
+            ).addTo(map_e81b5622f34e46fdbaf63179342ce2d6);
+        
+    
+            var icon_452af69c80eb46acb9d95e1e84d9ba77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_08cccbf859094efdb230dd3e683d8572.setIcon(icon_452af69c80eb46acb9d95e1e84d9ba77);
+        
+    
+        var popup_cc1a7171464648fbaaf7ef872dd11078 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_81bdd07fb0954b018da5996acb8f2435 = $(`<div id="html_81bdd07fb0954b018da5996acb8f2435" style="width: 100.0%; height: 100.0%;">Continent: Africa<br>Country: Nigeria<br>Total: 22<br>State: Lagos</div>`)[0];
+            popup_cc1a7171464648fbaaf7ef872dd11078.setContent(html_81bdd07fb0954b018da5996acb8f2435);
+        
+
+        marker_08cccbf859094efdb230dd3e683d8572.bindPopup(popup_cc1a7171464648fbaaf7ef872dd11078)
+        ;
+
+        
+    
+    
+            var marker_913218a88ae64bf2b631d6a576cc4bfb = L.marker(
+                [6.60779, 3.36948],
+                {}
+            ).addTo(map_e81b5622f34e46fdbaf63179342ce2d6);
+        
+    
+            var icon_4ad6fe67d4e0486190fb9b0f32c80cab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_913218a88ae64bf2b631d6a576cc4bfb.setIcon(icon_4ad6fe67d4e0486190fb9b0f32c80cab);
+        
+    
+        var popup_ffb56939b1bd42cf821e532edd0c5d2e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e0c9fb62bc84ce4a242a22893512f7c = $(`<div id="html_5e0c9fb62bc84ce4a242a22893512f7c" style="width: 100.0%; height: 100.0%;">Continent: Africa<br>Country: Nigeria<br>Total: 22<br>State: Lagos</div>`)[0];
+            popup_ffb56939b1bd42cf821e532edd0c5d2e.setContent(html_5e0c9fb62bc84ce4a242a22893512f7c);
+        
+
+        marker_913218a88ae64bf2b631d6a576cc4bfb.bindPopup(popup_ffb56939b1bd42cf821e532edd0c5d2e)
+        ;
+
+        
+    
+    
+            var marker_82adfc75c0b04799bb29d0e618cc308e = L.marker(
+                [6.60779, 3.36948],
+                {}
+            ).addTo(map_e81b5622f34e46fdbaf63179342ce2d6);
+        
+    
+            var icon_e85bf4ce4d5f400c8ae6968854711f04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_82adfc75c0b04799bb29d0e618cc308e.setIcon(icon_e85bf4ce4d5f400c8ae6968854711f04);
+        
+    
+        var popup_ff4daa15f83948ed87ef029e64be5f43 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9d0cd61df104475a7d2d2c0d4b5ee2b = $(`<div id="html_c9d0cd61df104475a7d2d2c0d4b5ee2b" style="width: 100.0%; height: 100.0%;">Continent: Africa<br>Country: Nigeria<br>Total: 22<br>State: Lagos</div>`)[0];
+            popup_ff4daa15f83948ed87ef029e64be5f43.setContent(html_c9d0cd61df104475a7d2d2c0d4b5ee2b);
+        
+
+        marker_82adfc75c0b04799bb29d0e618cc308e.bindPopup(popup_ff4daa15f83948ed87ef029e64be5f43)
+        ;
+
+        
+    
+    
+            var marker_392fe6d93f60486ba42389fd5c372675 = L.marker(
+                [6.60779, 3.36948],
+                {}
+            ).addTo(map_e81b5622f34e46fdbaf63179342ce2d6);
+        
+    
+            var icon_a5c1a173d61548ee9a9089f573b3d307 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_392fe6d93f60486ba42389fd5c372675.setIcon(icon_a5c1a173d61548ee9a9089f573b3d307);
+        
+    
+        var popup_e06f613dce5247ae940708f503826759 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05f3378589e9432ca1a9a6b4c8a7fb01 = $(`<div id="html_05f3378589e9432ca1a9a6b4c8a7fb01" style="width: 100.0%; height: 100.0%;">Continent: Africa<br>Country: Nigeria<br>Total: 22<br>State: Lagos</div>`)[0];
+            popup_e06f613dce5247ae940708f503826759.setContent(html_05f3378589e9432ca1a9a6b4c8a7fb01);
+        
+
+        marker_392fe6d93f60486ba42389fd5c372675.bindPopup(popup_e06f613dce5247ae940708f503826759)
+        ;
+
+        
+    
+    
+            var marker_3ea050584f294d19bd8d9a0c6de7a238 = L.marker(
+                [6.60779, 3.36948],
+                {}
+            ).addTo(map_e81b5622f34e46fdbaf63179342ce2d6);
+        
+    
+            var icon_8723f8016edd43e8920748c30a71370b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3ea050584f294d19bd8d9a0c6de7a238.setIcon(icon_8723f8016edd43e8920748c30a71370b);
+        
+    
+        var popup_8d12e71e4e704a85b8a5e4d795d3a809 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_054a2f6d2cd34fb8909a6be60de4206b = $(`<div id="html_054a2f6d2cd34fb8909a6be60de4206b" style="width: 100.0%; height: 100.0%;">Continent: Africa<br>Country: Nigeria<br>Total: 22<br>State: Lagos</div>`)[0];
+            popup_8d12e71e4e704a85b8a5e4d795d3a809.setContent(html_054a2f6d2cd34fb8909a6be60de4206b);
+        
+
+        marker_3ea050584f294d19bd8d9a0c6de7a238.bindPopup(popup_8d12e71e4e704a85b8a5e4d795d3a809)
+        ;
+
+        
+    
+    
+            var marker_451ab8f1146b453487e46fe4cb204269 = L.marker(
+                [35.7781, -78.6396],
+                {}
+            ).addTo(map_e81b5622f34e46fdbaf63179342ce2d6);
+        
+    
+            var icon_83bb5822116a4a4e8fac1bda367b0043 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_451ab8f1146b453487e46fe4cb204269.setIcon(icon_83bb5822116a4a4e8fac1bda367b0043);
+        
+    
+        var popup_cc93d92b898f439caf2598d29111d20b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b942cf031e3543e8b5f4c1c088e929e2 = $(`<div id="html_b942cf031e3543e8b5f4c1c088e929e2" style="width: 100.0%; height: 100.0%;">Continent: North America<br>Country: United States<br>Total: 2<br>State: North Carolina</div>`)[0];
+            popup_cc93d92b898f439caf2598d29111d20b.setContent(html_b942cf031e3543e8b5f4c1c088e929e2);
+        
+
+        marker_451ab8f1146b453487e46fe4cb204269.bindPopup(popup_cc93d92b898f439caf2598d29111d20b)
+        ;
+
+        
+    
+    
+            var marker_cff7ae7131a74fa38c2e9bb1f8e1f1f7 = L.marker(
+                [32.7782, -96.7985],
+                {}
+            ).addTo(map_e81b5622f34e46fdbaf63179342ce2d6);
+        
+    
+            var icon_040b85b8e59a48028854e448c8149584 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cff7ae7131a74fa38c2e9bb1f8e1f1f7.setIcon(icon_040b85b8e59a48028854e448c8149584);
+        
+    
+        var popup_879134a112964f8f8076a0ee788b8a42 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_732d5032263441cf90c08b0ef1820b24 = $(`<div id="html_732d5032263441cf90c08b0ef1820b24" style="width: 100.0%; height: 100.0%;">Continent: North America<br>Country: United States<br>Total: 2<br>State: Texas</div>`)[0];
+            popup_879134a112964f8f8076a0ee788b8a42.setContent(html_732d5032263441cf90c08b0ef1820b24);
+        
+
+        marker_cff7ae7131a74fa38c2e9bb1f8e1f1f7.bindPopup(popup_879134a112964f8f8076a0ee788b8a42)
+        ;
+
+        
+    
+    
+            var marker_1f9a96f826344c10bd4818170a8530cf = L.marker(
+                [6.60779, 3.36948],
+                {}
+            ).addTo(map_e81b5622f34e46fdbaf63179342ce2d6);
+        
+    
+            var icon_1f3fdbe978e147ddb0a5ef8a29d69601 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1f9a96f826344c10bd4818170a8530cf.setIcon(icon_1f3fdbe978e147ddb0a5ef8a29d69601);
+        
+    
+        var popup_e0d8579110ef4765bf05ff9d1fdf82b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0043d64286bb4a80a825a120e134676b = $(`<div id="html_0043d64286bb4a80a825a120e134676b" style="width: 100.0%; height: 100.0%;">Continent: Africa<br>Country: Nigeria<br>Total: 22<br>State: Lagos</div>`)[0];
+            popup_e0d8579110ef4765bf05ff9d1fdf82b8.setContent(html_0043d64286bb4a80a825a120e134676b);
+        
+
+        marker_1f9a96f826344c10bd4818170a8530cf.bindPopup(popup_e0d8579110ef4765bf05ff9d1fdf82b8)
+        ;
+
+        
+    
+    
+            var marker_b033f4952e9841aa878e9772df8dfcc0 = L.marker(
+                [6.60779, 3.36948],
+                {}
+            ).addTo(map_e81b5622f34e46fdbaf63179342ce2d6);
+        
+    
+            var icon_bc41d3bd92cc4d72b29cc29c6f58becd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b033f4952e9841aa878e9772df8dfcc0.setIcon(icon_bc41d3bd92cc4d72b29cc29c6f58becd);
+        
+    
+        var popup_e48c6d3544a84929b7ebe7c671707c1e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_066356179b3a477e96610310d15643e3 = $(`<div id="html_066356179b3a477e96610310d15643e3" style="width: 100.0%; height: 100.0%;">Continent: Africa<br>Country: Nigeria<br>Total: 22<br>State: Lagos</div>`)[0];
+            popup_e48c6d3544a84929b7ebe7c671707c1e.setContent(html_066356179b3a477e96610310d15643e3);
+        
+
+        marker_b033f4952e9841aa878e9772df8dfcc0.bindPopup(popup_e48c6d3544a84929b7ebe7c671707c1e)
+        ;
+
+        
+    
+    
+            var marker_f35995cec6cc417f8a43e388af26cdfb = L.marker(
+                [6.60779, 3.36948],
+                {}
+            ).addTo(map_e81b5622f34e46fdbaf63179342ce2d6);
+        
+    
+            var icon_e0855851916e4823925d3f43ea439944 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f35995cec6cc417f8a43e388af26cdfb.setIcon(icon_e0855851916e4823925d3f43ea439944);
+        
+    
+        var popup_e0284bce02884a7e93b1e1f8e9368cfc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69881aefc3274c099cc15c074f5ef31b = $(`<div id="html_69881aefc3274c099cc15c074f5ef31b" style="width: 100.0%; height: 100.0%;">Continent: Africa<br>Country: Nigeria<br>Total: 22<br>State: Lagos</div>`)[0];
+            popup_e0284bce02884a7e93b1e1f8e9368cfc.setContent(html_69881aefc3274c099cc15c074f5ef31b);
+        
+
+        marker_f35995cec6cc417f8a43e388af26cdfb.bindPopup(popup_e0284bce02884a7e93b1e1f8e9368cfc)
+        ;
+
+        
+    
+    
+            var marker_8e465bda18c746818dfbd94bc9db1f9d = L.marker(
+                [6.60779, 3.36948],
+                {}
+            ).addTo(map_e81b5622f34e46fdbaf63179342ce2d6);
+        
+    
+            var icon_3e5e410bad784cbea8d83e467793aa15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8e465bda18c746818dfbd94bc9db1f9d.setIcon(icon_3e5e410bad784cbea8d83e467793aa15);
+        
+    
+        var popup_4fefd82df1fc4a1ca4c5f95ed0025fa4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7fb6a48f9c2425b9389726263641580 = $(`<div id="html_b7fb6a48f9c2425b9389726263641580" style="width: 100.0%; height: 100.0%;">Continent: Africa<br>Country: Nigeria<br>Total: 22<br>State: Lagos</div>`)[0];
+            popup_4fefd82df1fc4a1ca4c5f95ed0025fa4.setContent(html_b7fb6a48f9c2425b9389726263641580);
+        
+
+        marker_8e465bda18c746818dfbd94bc9db1f9d.bindPopup(popup_4fefd82df1fc4a1ca4c5f95ed0025fa4)
+        ;
+
+        
+    
+    
+            var marker_a31ec567e9d146588edba15b882ac545 = L.marker(
+                [6.60779, 3.36948],
+                {}
+            ).addTo(map_e81b5622f34e46fdbaf63179342ce2d6);
+        
+    
+            var icon_a9bebc90fbdf4c8aac6bf4a337a54e3e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a31ec567e9d146588edba15b882ac545.setIcon(icon_a9bebc90fbdf4c8aac6bf4a337a54e3e);
+        
+    
+        var popup_8bf3c3c58bf04268ba213b270843c481 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d576eaca054442cb85a9f698c04ecab4 = $(`<div id="html_d576eaca054442cb85a9f698c04ecab4" style="width: 100.0%; height: 100.0%;">Continent: Africa<br>Country: Nigeria<br>Total: 22<br>State: Lagos</div>`)[0];
+            popup_8bf3c3c58bf04268ba213b270843c481.setContent(html_d576eaca054442cb85a9f698c04ecab4);
+        
+
+        marker_a31ec567e9d146588edba15b882ac545.bindPopup(popup_8bf3c3c58bf04268ba213b270843c481)
+        ;
+
+        
+    
+    
+            var marker_428637d6ba364bafa32f007a6047c0de = L.marker(
+                [6.60779, 3.36948],
+                {}
+            ).addTo(map_e81b5622f34e46fdbaf63179342ce2d6);
+        
+    
+            var icon_99acd427809d46c2afb7adb8762f9c77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_428637d6ba364bafa32f007a6047c0de.setIcon(icon_99acd427809d46c2afb7adb8762f9c77);
+        
+    
+        var popup_5036c20f32974ca6a58b055b54a2512e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96a6405582bd4db5830cd9eeb2feae39 = $(`<div id="html_96a6405582bd4db5830cd9eeb2feae39" style="width: 100.0%; height: 100.0%;">Continent: Africa<br>Country: Nigeria<br>Total: 22<br>State: Lagos</div>`)[0];
+            popup_5036c20f32974ca6a58b055b54a2512e.setContent(html_96a6405582bd4db5830cd9eeb2feae39);
+        
+
+        marker_428637d6ba364bafa32f007a6047c0de.bindPopup(popup_5036c20f32974ca6a58b055b54a2512e)
+        ;
+
+        
+    
+    
+            var marker_d625e334f1154a0cb7823d047964e5f6 = L.marker(
+                [6.60779, 3.36948],
+                {}
+            ).addTo(map_e81b5622f34e46fdbaf63179342ce2d6);
+        
+    
+            var icon_fc5b2e0f75d6478188ddc0e4c78e9511 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d625e334f1154a0cb7823d047964e5f6.setIcon(icon_fc5b2e0f75d6478188ddc0e4c78e9511);
+        
+    
+        var popup_9a73b372444640e9b8af2a836129f34f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c7c23d6033f4be1a390fab6e616a4fa = $(`<div id="html_9c7c23d6033f4be1a390fab6e616a4fa" style="width: 100.0%; height: 100.0%;">Continent: Africa<br>Country: Nigeria<br>Total: 22<br>State: Lagos</div>`)[0];
+            popup_9a73b372444640e9b8af2a836129f34f.setContent(html_9c7c23d6033f4be1a390fab6e616a4fa);
+        
+
+        marker_d625e334f1154a0cb7823d047964e5f6.bindPopup(popup_9a73b372444640e9b8af2a836129f34f)
+        ;
+
+        
+    
+    
+            var marker_57d088682e2a4d429f94787d4e323120 = L.marker(
+                [6.60779, 3.36948],
+                {}
+            ).addTo(map_e81b5622f34e46fdbaf63179342ce2d6);
+        
+    
+            var icon_f158e37924334228955089a67c535556 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_57d088682e2a4d429f94787d4e323120.setIcon(icon_f158e37924334228955089a67c535556);
+        
+    
+        var popup_85eeec625dff47efa52dbd16b74cbc6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2fcecbf6af004be1a6cc4a8fea03bd42 = $(`<div id="html_2fcecbf6af004be1a6cc4a8fea03bd42" style="width: 100.0%; height: 100.0%;">Continent: Africa<br>Country: Nigeria<br>Total: 22<br>State: Lagos</div>`)[0];
+            popup_85eeec625dff47efa52dbd16b74cbc6b.setContent(html_2fcecbf6af004be1a6cc4a8fea03bd42);
+        
+
+        marker_57d088682e2a4d429f94787d4e323120.bindPopup(popup_85eeec625dff47efa52dbd16b74cbc6b)
+        ;
+
+        
+    
+    
+            var marker_5fa5801fc3e34cb29c72bbcc3a37ee20 = L.marker(
+                [6.60779, 3.36948],
+                {}
+            ).addTo(map_e81b5622f34e46fdbaf63179342ce2d6);
+        
+    
+            var icon_4e9b065af453494ba5bd023301770e64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5fa5801fc3e34cb29c72bbcc3a37ee20.setIcon(icon_4e9b065af453494ba5bd023301770e64);
+        
+    
+        var popup_d3d73f349c9e4754b0345b047fa85d34 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bcbd48d47bdc41f0bfdc487823efef25 = $(`<div id="html_bcbd48d47bdc41f0bfdc487823efef25" style="width: 100.0%; height: 100.0%;">Continent: Africa<br>Country: Nigeria<br>Total: 22<br>State: Lagos</div>`)[0];
+            popup_d3d73f349c9e4754b0345b047fa85d34.setContent(html_bcbd48d47bdc41f0bfdc487823efef25);
+        
+
+        marker_5fa5801fc3e34cb29c72bbcc3a37ee20.bindPopup(popup_d3d73f349c9e4754b0345b047fa85d34)
+        ;
+
+        
+    
+    
+            var marker_13924c3d6dd34474bb7af85db8fd1d98 = L.marker(
+                [6.60779, 3.36948],
+                {}
+            ).addTo(map_e81b5622f34e46fdbaf63179342ce2d6);
+        
+    
+            var icon_0fe72fd898f343dfa8131542ab1777f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_13924c3d6dd34474bb7af85db8fd1d98.setIcon(icon_0fe72fd898f343dfa8131542ab1777f7);
+        
+    
+        var popup_a327d641a339472197a5e3d9966ffa11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29bbd9ec38d24fca84c3b7283b6a4e2b = $(`<div id="html_29bbd9ec38d24fca84c3b7283b6a4e2b" style="width: 100.0%; height: 100.0%;">Continent: Africa<br>Country: Nigeria<br>Total: 22<br>State: Lagos</div>`)[0];
+            popup_a327d641a339472197a5e3d9966ffa11.setContent(html_29bbd9ec38d24fca84c3b7283b6a4e2b);
+        
+
+        marker_13924c3d6dd34474bb7af85db8fd1d98.bindPopup(popup_a327d641a339472197a5e3d9966ffa11)
+        ;
+
+        
+    
+    
+            var marker_d6b56b75bdcd4fb8ae1886fe57c3350b = L.marker(
+                [6.60779, 3.36948],
+                {}
+            ).addTo(map_e81b5622f34e46fdbaf63179342ce2d6);
+        
+    
+            var icon_50a5101c5eaf4fe08e375be1ea1ce86f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d6b56b75bdcd4fb8ae1886fe57c3350b.setIcon(icon_50a5101c5eaf4fe08e375be1ea1ce86f);
+        
+    
+        var popup_fb8473eded7847daaafacfb1fd4619a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db6cc43912a64d689d3a3cf7948fd683 = $(`<div id="html_db6cc43912a64d689d3a3cf7948fd683" style="width: 100.0%; height: 100.0%;">Continent: Africa<br>Country: Nigeria<br>Total: 22<br>State: Lagos</div>`)[0];
+            popup_fb8473eded7847daaafacfb1fd4619a1.setContent(html_db6cc43912a64d689d3a3cf7948fd683);
+        
+
+        marker_d6b56b75bdcd4fb8ae1886fe57c3350b.bindPopup(popup_fb8473eded7847daaafacfb1fd4619a1)
+        ;
+
+        
+    
+    
+            var marker_a6ccaedccf824777a3a84a4792719370 = L.marker(
+                [6.60779, 3.36948],
+                {}
+            ).addTo(map_e81b5622f34e46fdbaf63179342ce2d6);
+        
+    
+            var icon_da01928e4cf0475baca4c767514cfdaf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a6ccaedccf824777a3a84a4792719370.setIcon(icon_da01928e4cf0475baca4c767514cfdaf);
+        
+    
+        var popup_7b4abeb11a434f7db7f6c42f50cc63b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_adfa3fbb49904bfbb3ec76555bbf945e = $(`<div id="html_adfa3fbb49904bfbb3ec76555bbf945e" style="width: 100.0%; height: 100.0%;">Continent: Africa<br>Country: Nigeria<br>Total: 22<br>State: Lagos</div>`)[0];
+            popup_7b4abeb11a434f7db7f6c42f50cc63b2.setContent(html_adfa3fbb49904bfbb3ec76555bbf945e);
+        
+
+        marker_a6ccaedccf824777a3a84a4792719370.bindPopup(popup_7b4abeb11a434f7db7f6c42f50cc63b2)
+        ;
+
+        
+    
+    
+            var marker_d03a7681269940319a508d35137b74e0 = L.marker(
+                [6.60779, 3.36948],
+                {}
+            ).addTo(map_e81b5622f34e46fdbaf63179342ce2d6);
+        
+    
+            var icon_398bc38182f94685aa9645396db45967 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d03a7681269940319a508d35137b74e0.setIcon(icon_398bc38182f94685aa9645396db45967);
+        
+    
+        var popup_e0d71fbb59834377bb6bed8968c23bd1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4b53a2cd3d9243f9bd3302852370b9f5 = $(`<div id="html_4b53a2cd3d9243f9bd3302852370b9f5" style="width: 100.0%; height: 100.0%;">Continent: Africa<br>Country: Nigeria<br>Total: 22<br>State: Lagos</div>`)[0];
+            popup_e0d71fbb59834377bb6bed8968c23bd1.setContent(html_4b53a2cd3d9243f9bd3302852370b9f5);
+        
+
+        marker_d03a7681269940319a508d35137b74e0.bindPopup(popup_e0d71fbb59834377bb6bed8968c23bd1)
+        ;
+
+        
+    
+    
+            var marker_cc894dee8b8b4237856d43112da1d096 = L.marker(
+                [6.60779, 3.36948],
+                {}
+            ).addTo(map_e81b5622f34e46fdbaf63179342ce2d6);
+        
+    
+            var icon_218c17cc37654afbacaa524a3fdebdb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cc894dee8b8b4237856d43112da1d096.setIcon(icon_218c17cc37654afbacaa524a3fdebdb8);
+        
+    
+        var popup_9be433eff9a648bc9913b321493d2618 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da6f8cb62a244c9ab712606ae40ba379 = $(`<div id="html_da6f8cb62a244c9ab712606ae40ba379" style="width: 100.0%; height: 100.0%;">Continent: Africa<br>Country: Nigeria<br>Total: 22<br>State: Lagos</div>`)[0];
+            popup_9be433eff9a648bc9913b321493d2618.setContent(html_da6f8cb62a244c9ab712606ae40ba379);
+        
+
+        marker_cc894dee8b8b4237856d43112da1d096.bindPopup(popup_9be433eff9a648bc9913b321493d2618)
+        ;
+
+        
+    
+    
+            var marker_3cd9522c1f6d49b2892ae5a254a5bc2a = L.marker(
+                [6.60779, 3.36948],
+                {}
+            ).addTo(map_e81b5622f34e46fdbaf63179342ce2d6);
+        
+    
+            var icon_31b15170ec1946e8b43fe67403f9a2f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3cd9522c1f6d49b2892ae5a254a5bc2a.setIcon(icon_31b15170ec1946e8b43fe67403f9a2f7);
+        
+    
+        var popup_36825c226a3b40cdb561570a0cc5721c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ff800082b4a47c0a7acc2f07c3de84e = $(`<div id="html_6ff800082b4a47c0a7acc2f07c3de84e" style="width: 100.0%; height: 100.0%;">Continent: Africa<br>Country: Nigeria<br>Total: 22<br>State: Lagos</div>`)[0];
+            popup_36825c226a3b40cdb561570a0cc5721c.setContent(html_6ff800082b4a47c0a7acc2f07c3de84e);
+        
+
+        marker_3cd9522c1f6d49b2892ae5a254a5bc2a.bindPopup(popup_36825c226a3b40cdb561570a0cc5721c)
+        ;
+
+        
+    
+    
+            var marker_b02bc32c32f243588e674fc6dc9c9c3a = L.marker(
+                [6.60779, 3.36948],
+                {}
+            ).addTo(map_e81b5622f34e46fdbaf63179342ce2d6);
+        
+    
+            var icon_a18869da6a244102a04f0fa9733a1478 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b02bc32c32f243588e674fc6dc9c9c3a.setIcon(icon_a18869da6a244102a04f0fa9733a1478);
+        
+    
+        var popup_304eb466a2a5412ead3170c785ea12a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_562f76b38fc8405ca86185930abfa64b = $(`<div id="html_562f76b38fc8405ca86185930abfa64b" style="width: 100.0%; height: 100.0%;">Continent: Africa<br>Country: Nigeria<br>Total: 22<br>State: Lagos</div>`)[0];
+            popup_304eb466a2a5412ead3170c785ea12a8.setContent(html_562f76b38fc8405ca86185930abfa64b);
+        
+
+        marker_b02bc32c32f243588e674fc6dc9c9c3a.bindPopup(popup_304eb466a2a5412ead3170c785ea12a8)
+        ;
+
+        
+    
+</script>

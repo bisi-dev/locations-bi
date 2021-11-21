@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- link css to flask app -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Analytics for Site Visitors"
+    />
+    <title>Location Analytics BI</title>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div style="text-align: center;" class="main-text">
+      <h1>Python visualization</h1>
+      <select id="MySelectMenu">
+        <option value="{{ url_for('static', filename='map/locations.html') }}">Python Open Street Map</option>
+        <option value="{{ url_for('static', filename='map/locationsHeatMap.html') }}">Python Heat Map</option>
+        <option value="https://public.tableau.com/views/Map_16288471482940/Dashboard1?:showVizHome=no&:embed=true">Tableau Map</option>
+      </select>
+      <button onclick="newSrc()">View</button>
+    </div>
+    <br>
+    <div style="text-align:center; position: relative; overflow: hidden; width: 100%; padding-top: 56.25%;" class="container">
+      <iframe class="iframe" 
+      style= "position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;"
+      id="myFrame" src="{{ url_for('static', filename='map/locations.html') }}"></iframe>
+    </div>
+    
+    <script>
+      function newSrc() {
+        let e = document.getElementById("MySelectMenu");
+        let newSrc = e.options[e.selectedIndex].value;
+        document.getElementById("myFrame").src=newSrc;
+      }
+    </script>
+  </body>
+</html>
